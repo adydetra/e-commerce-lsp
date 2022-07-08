@@ -1,0 +1,113 @@
+* {
+    line-height: 1.5;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    padding: 0.3rem 1rem;
+    background: #5EA2FA;
+    justify-content: space-between;
+}
+
+header img {
+    margin: 0 1rem 0 0;
+}
+
+header a {
+    color: #FFF;
+    font-weight: 500;
+    transition: 0.1s ease-in-out;
+}
+
+header a:hover {
+    color: #1d1d1d;
+}
+
+ul {
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul:nth-child(1) {
+    padding: 1rem 0.5rem;
+}
+
+ul li {
+    display: flex;
+    padding: 0 1rem;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td {
+    padding: 0.5rem 1.5rem;
+}
+
+table a {
+    color: red;
+}
+
+table a:hover {
+    color: darkred;
+}
+
+button {
+    width: 100px;
+    border: 0;
+    padding: 0.5rem 1rem;
+    background: #5EA2FA;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background: #2F80ED;
+}
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+    padding: 1rem 0;
+    color: #1d1d1d;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.logout {
+    background: white;
+    color: red;
+    padding: 0.4rem 0.8rem 0.5rem 0.8rem;
+}

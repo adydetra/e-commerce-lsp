@@ -1,0 +1,225 @@
+* {
+    line-height: 1.5;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    padding: 0.3rem 1rem;
+    background: #5EA2FA;
+    justify-content: space-between;
+}
+
+#mobile {
+    display: none;
+}
+
+header img {
+    margin: 0 1rem 0 0;
+}
+
+header a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.1s ease-in-out;
+}
+
+header a:hover {
+    color: #1d1d1d;
+}
+
+ul {
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul:nth-child(1) {
+    padding: 1rem 0.5rem;
+}
+
+ul li {
+    display: flex;
+    padding: 0 1rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: url("../img/hero.svg");
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    color: #FFF;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: -3rem 0 0 0;
+    font-weight: 600;
+}
+
+.hero p {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0.5rem 0 1.5rem 0;
+    line-height: 2;
+    font-size: 16px;
+    word-spacing: 1px
+}
+
+.hero button {
+    cursor: pointer;
+    color: #FFF;
+    border: none;
+    background: #2F80ED;
+    padding: 0.5rem 3rem;
+    transition: 0.1s ease-in-out;
+}
+
+.hero button:hover {
+    background: rgb(13, 104, 223);
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+.container h2 {
+    margin: 3rem 0 0 0;
+}
+
+section {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0 10rem 0;
+}
+
+.card {
+    width: 22%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.082);
+    transition: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 0 2rem 0;
+}
+
+.card img {
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover img {
+    opacity: 0.9;
+    transform: scaleX(1.1);
+}
+
+.body-card {
+    color: #000;
+    font-size: 14px;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+h4 {
+    margin: 0 !important;
+    font-weight: 600;
+    padding: 0;
+}
+
+.card p:nth-child(2), .card p:nth-child(3) {
+    font-size: 12px;
+}
+
+.card p:nth-child(4) {
+    color: #2F80ED;
+    font-size: 14px;
+}
+
+.card button {
+    border: 0;
+    color: #FFF;
+    background: #5EA2FA;
+    width: 40%;
+    border-radius: 3px;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+    margin: 0 0 0.5rem 0;
+}
+
+.card button:hover {
+    background: #2F80ED;
+}
+
+.card .box {
+    height: 200px;
+}
+
+.card img {
+    height: 100%;
+}
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+    padding: 1rem 0;
+    color: #1d1d1d;
+}
+
+.logout {
+    background: white;
+    color: red;
+    padding: 0.4rem 0.8rem 0.5rem 0.8rem;
+}
+
+@media only screen and (max-width: 567px) {
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: flex;
+    }
+
+    header a {
+        font-size: 12px;
+    }
+
+    .container, .container section {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .card {
+        width: 65%;
+        margin: 1.5rem auto;
+    }
+
+    .card img {
+        width: 100% !important;
+    }
+
+    .body-card {
+        padding: 1rem 0 0.5rem 1rem !important;
+    }
+}
