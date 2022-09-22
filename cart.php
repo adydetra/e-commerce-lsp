@@ -204,7 +204,7 @@ if(isset($_POST['update'])) {
 
     <!-- Footer -->
     <div class="container footer" id="contact">
-        <p>&copy; Copyright 2022 - Adityawarman Dewa Putra&nbsp;&nbsp; | &nbsp;&nbsp;Contact: dewagaming123.sp@gmail.com</p>
+        <p>&copy; Copyright 2022 - Adityawarman Dewa Putra&nbsp;&nbsp; | &nbsp;&nbsp;Contact: devdewa123.sp@gmail.com</p>
     </div>
 
 </body>
