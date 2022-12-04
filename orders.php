@@ -92,7 +92,7 @@ include_once("koneksi.php");
                 <table border="1" cellpadding="3">
                     <tr>
                         <th> No </th>
-                        <th> Id Transaksi </th>
+                        <!-- <th> Id Transaksi </th> -->
                         <th> Nama Printer </th>
                         <th> Total Harga </th>
                         <th> Status </th>
@@ -107,7 +107,7 @@ include_once("koneksi.php");
 
                     $id = $_SESSION['id_user']; //Id User
                     $query = "SELECT * FROM transaksi
-                    JOIN printer_tb ON printer_tb.IdPrinter = transaksi.UserIdUser"; //Mengambil data dari tabel transaksi
+                    JOIN printer_tb ON printer_tb.IdPrinter = Printer_tbIdPrinter"; //Mengambil data dari tabel transaksi
                     $result = mysqli_query($koneksi, $query);
                     $no= 1;
                     $total = 0;
@@ -117,7 +117,7 @@ include_once("koneksi.php");
                     
                         <tr>
                             <td class="text-center"><?= $no++ ?>.</td>
-                            <td class="text-center"><?= $transaksi->IdTransaksi ?></td>
+                            <!-- <td class="text-center"><?= $transaksi->IdTransaksi ?></td> -->
                             <td><?= $transaksi->NamaPrinter ?></td>
                             <td><?= "Rp. " . number_format($transaksi->Jumlah, 0, ".", "."); ?></td>
                             <td class="red">Belum Dikonfirmasi</td>
@@ -132,7 +132,7 @@ include_once("koneksi.php");
             <table border="1" cellpadding="3">
                 <tr>
                     <th> No </th>
-                    <th> Id Transaksi </th>
+                    <!-- <th> Id Transaksi </th> -->
                     <th> Nama Printer </th>
                     <th> Total Harga </th>
                     <th> Status </th>
@@ -144,7 +144,7 @@ include_once("koneksi.php");
 
                 $id = $_SESSION['id_user'];
                 $query = "SELECT * FROM transaksi
-                JOIN printer_tb ON printer_tb.IdPrinter = transaksi.UserIdUser"; //Mengambil data dari tabel transaksi
+                JOIN printer_tb ON printer_tb.IdPrinter = Printer_tbIdPrinter"; //Mengambil data dari tabel transaksi
                 $result = mysqli_query($koneksi, $query);
                 $no= 1;
                 $total = 0;
@@ -153,7 +153,7 @@ include_once("koneksi.php");
 
                 <tr>
                     <td class="text-center"><?= $no++ ?>.</td>
-                    <td class="text-center"><?= $transaksi->IdTransaksi ?></td>
+                    <!-- <td class="text-center"><?= $transaksi->IdTransaksi ?></td> -->
                     <td><?= $transaksi->NamaPrinter ?></td>
                     <td><?= "Rp. " . number_format($transaksi->Jumlah, 0, ".", "."); ?></td>
                     <td class="green">Sudah Dikonfirmasi</td>
