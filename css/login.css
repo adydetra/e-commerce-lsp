@@ -91,3 +91,21 @@ form p {
     color: red;
     text-align: center;
 }
+
+@media only screen and (max-width: 567px) {
+    .col-1 {
+        display: none !important;
+    }
+
+    .col-2 {
+        width: 100% !important;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    .button {
+        padding: 0.5rem 1rem;
+    }
+}
